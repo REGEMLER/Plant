@@ -29,10 +29,44 @@
     margin-top: 50px;
   }
   .header-info p {
-    margin-top: 25px;
+    margin-top: 20px;
   }
   .header-buttons {
     margin-top: 20px;
   }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.about-item {
+  padding-top: 0;
+}
+
+.about-item .about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-item .about-header h3 {
+  margin-left: 0;
+}
+
+.about-item .about-text {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=media.css.map */

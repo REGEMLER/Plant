@@ -16,7 +16,10 @@
     display: none;
 }
 .header-img2{
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%); 
 }
 .header-menu{
     margin: 0 auto;
@@ -28,13 +31,39 @@
 }
 .header-info{
     h1{
-        margin-top: 50px;
+        margin-top: 20px;
         }
      p{
-        margin-top: 25px;
+        margin-top: 20px;
+        color:$colorWhite;
         }
 }
 .header-buttons{
     margin-top: 20px;
+    .header-btn{
+        padding: 30px 30px;
+    }
+}
+// -------Section About-----------
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 170px;
+}
+.about-item{
+    padding-top: 0;
+    .about-header{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        h3{
+            margin-left: 0;
+        }
+    }
+    .about-text{
+        margin: 10px 0;
+    }
 }
 }
