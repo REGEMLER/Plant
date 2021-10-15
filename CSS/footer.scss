@@ -1,0 +1,96 @@
+.footer{
+    position: relative;
+    margin-top: 80px;
+}
+.footer::before{
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid rgba(21, 105, 99, 0.3);;
+    position: absolute;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 160px;
+}
+.footer-item1{
+    h2{
+        @include  textStyle($lastFont,$sizeMedium, 500, 24px);
+        color:$mainColor; 
+        text-transform: uppercase;
+        margin-bottom: 25px;
+}
+    h3{
+        color:$textColor2; 
+        @include  textStyle($footerFont,$sizeMain, 500, 18px);
+        text-transform: capitalize;
+        margin-bottom: 10px; 
+    }
+    p{
+        color:$textColor2; 
+        @include  textStyle($footerFont,$sizeFooter, 400, 20px);
+        width: 280px;
+    }
+
+}
+.footer-item2{
+    h3{
+        color:$colorBlack; 
+        @include  textStyle($footerFont,$sizeMain, 500, 16px);
+        text-transform: capitalize;
+        margin-bottom: 20px; 
+    }
+    h4{
+        color:$colorBlack; 
+        @include  textStyle($footerFont,$sizeLinks, 400, 16px);
+        text-transform: capitalize;
+        margin-bottom: 15px; 
+    }
+}
+.footer-item3{
+    h3{
+        color:$colorBlack; 
+        @include  textStyle($footerFont,$sizeMain, 500, 16px);
+        text-transform: capitalize;
+        margin-bottom: 20px; 
+    }
+    h4{
+        color:$colorBlack; 
+        @include  textStyle($footerFont,$sizeLinks, 400, 16px);
+        text-transform: capitalize;
+        margin-bottom: 15px; 
+    }
+}
+.footer-item4{
+    h3{
+        color:$colorBlack; 
+        @include  textStyle($footerFont,$sizeMain, 500, 16px);
+        text-transform: capitalize;
+        margin-bottom: 15px; 
+    }
+    input[type="email"]{
+        background-color: transparent;
+        width: 235px;
+        height: 35px;
+        border: 1px solid #F2F2F2;
+    }
+    input[type="email"]::placeholder{
+        color:$colorBlack; 
+        @include  textStyle($footerFont,$sizeLittle, 400, 16px);
+    }
+    input[type="submit"]{
+        display: block;
+        background-color: $mainColor;
+        @include  textStyle($submitFont,$sizeLinks, 500, 14px);
+        width: 100px;
+        height: 35px;
+        border-radius: 2px;
+        color: $colorWhite;
+        padding: 4px 12px;
+        margin-top: 15px;
+        transition: all .4s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

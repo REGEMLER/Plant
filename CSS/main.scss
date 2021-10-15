@@ -1,0 +1,177 @@
+.main-wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+// -------Section About-----------
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.about-item4{
+    margin-right: 0;
+}
+.about-item{
+    padding: 20px 10px;
+    border: 1px solid #E0E0E0;
+    margin-right: 20px;
+    .about-header{
+        display: flex;
+        align-items: center;
+        h3{
+            @include  textStyle($mainFont, $sizeMain, 700, 24px);
+            color: $mainColor;
+            margin-left: 20px;
+        }
+    }
+    .about-text{
+        @include  textStyle($mainFont, $sizeSmall, 400, 16px);
+        color: $textColor;
+        margin-top: 20px;
+    }
+}
+// -------Section Gallery-----------
+.gallery{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.gallery-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    h2{
+        @include  textStyle($mainFont,$sizeMedium1, 500, 24px);
+        color:$colorBlack;
+    }
+    form{
+        width: 130px;
+        height: 30px;
+        padding: 8px, 12px, 8px, 12px ; 
+        border: 1px solid #E0E0E0;
+        text-align: center;
+        line-height:30px;
+        option{
+            @include  textStyle($mainFont,$sizeLittle, 500, 14px);
+            color:$colorBlack; 
+            text-align: center;
+        }
+
+    }
+}
+.gallery-header::after{
+    content: "";
+    border-bottom: 1px solid $textColor3;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    transform: translate(0%, -50%);
+}
+.gallery-images{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .gallery-image{
+        background-color: #F3F4F6;
+    }
+    p{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        @include  textStyle($mainFont,$sizeMain, 400, 20px);
+        color:$colorBlack; 
+    }
+    h4{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        @include  textStyle($mainFont,$sizeMain, 600, 20px);
+        color:$colorBlack; 
+    } 
+}
+// -------Section Plants-----------
+.plants{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.plants-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    align-content: center;
+    justify-content: space-between;
+    justify-items: stretch;
+    .plants-info{
+        grid-row: 1/3;
+        grid-column: 1;
+        h2{
+            @include  textStyle($mainFont,$sizeH2, 700, 56px);
+            color:$textColor;   
+            width: 90%;
+            margin: 0 auto;
+        }
+        p{
+            @include  textStyle($mainFont,$sizeMain, 400, 28px);
+            color:$sizeMain;  
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+    .plants-littlelImg{
+        grid-row: 3/4;
+        grid-column: 1;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .plants-bigImg{
+        grid-row: 1/4;
+        grid-column: 2; 
+        width: 100%;
+        margin: 0 auto;
+        text-align: right;
+        img{
+         width: 80%; 
+         text-align: right;
+        }
+    }
+}
+// -------Section Forms-----------
+.forms{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.forms-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F3F4F6;
+    h2{
+        @include  textStyle($mainFont,$sizeH2, 700, 56px);
+        color:$sizeMain;   
+        width: 70%;
+        margin-left: 100px;
+    }
+    input{
+        background-color: $mainColor;
+        width: 150px;
+        height: 40px;
+        color: $textColor1;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 30px;
+        transition: all .4s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

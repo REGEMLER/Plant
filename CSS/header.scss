@@ -1,0 +1,78 @@
+.header-wrapper{
+    min-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+    .header-content{
+        display: flex;
+        justify-content: center;     
+    }  
+}
+.header-img2{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.header-info{
+    h1{
+        @include  textStyle($mainFont, $sizeH1, 500, 80px);
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+        color:$mainColor;
+        text-align: center;
+        }
+        p{
+        @include  textStyle($mainFont, $sizeHeader, 400, 32px);
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 25px;
+        color:$textColor;
+        text-align: center;  
+        }
+}
+.header-menu{
+display: flex;
+justify-content: center;
+margin-left: 130px;
+padding-top: 50px;
+li{
+    text-align: center;
+}
+a{
+    color: $colorBlack;
+    margin-right: 50px;
+    text-align: center;
+}
+.header-nav-btn{
+    color: $mainColor;
+    @include  textStyle($buttonFont, $sizeLinks, 700, 20px);
+}
+}
+.header-buttons{
+margin-top: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+.header-btn{
+    padding: 40px 50px;
+    transition: all .4s;
+    &:hover{
+        background-color:$mainColor;
+    }
+    a{
+        display: block;
+    }
+    .header-switch{
+        @include  textStyle($mainFont, $sizeMedium, 500, 30px);
+        color: $textColor2;
+    }
+    .header-btn-link{
+        @include  textStyle($mainFont, $sizeBig, 500, 40px);
+        color:$mainColor;
+        transition: all .4s;
+        &:hover{
+            color:$colorWhite;
+        }
+    }
+}
+}
