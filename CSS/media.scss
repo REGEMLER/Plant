@@ -1,7 +1,6 @@
 @media screen and (max-width:767px) {
     // -----Header------
     .header-wrapper{
-        height: 100vw;
         min-width: 300px;
         width: 100%;
         margin: 0 auto;
@@ -50,7 +49,7 @@
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    padding-top: 170px;
+     margin-top: 25px;
 }
 .about-item{
     padding: 0;
