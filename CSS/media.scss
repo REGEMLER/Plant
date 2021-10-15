@@ -66,4 +66,79 @@
         margin: 10px 0;
     }
 }
+// -------Section Gallery-----------
+.gallery{
+    width: 100%;
+    margin: 0 auto;
 }
+.gallery-images{
+    flex-direction: column;
+    .gallery-item{
+        margin-bottom: 20px;
+    }
+}
+// -------Section Plants-----------
+.plants{
+    width: 100%;
+    margin: 0 auto;
+}
+.plants-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .plants-info{
+        background-image: url(../IMG/plant1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2{  
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        p{  
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+    .plants-littlelImg{
+        display: none;
+    }
+    .plants-bigImg{
+        display: none;
+    }
+}
+// -------Section Plants-----------
+.forms-content{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../IMG/forms.png);
+    background-repeat: no-repeat;
+    h2{
+        @include  textStyle($mainFont,$sizeH2, 700, 56px);
+        color:$sizeMain;   
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    input{
+        background-color: $mainColor;
+        width: 95%;
+        margin: 0 auto;
+        height: 40px;
+        color: $textColor1;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+.forms-img{
+    display: none;
+}
+}
+
+
