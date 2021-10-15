@@ -139,6 +139,45 @@
 .forms-img{
     display: none;
 }
+// -------Footer-----------
+.footer{
+    margin-top: 50px;
+    background-color: #F3F4F6;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align:center;
+}
+.footer-item1{
+    p{
+        margin-bottom: 25px;
+        width: 100%;
+    }
+}
+.footer-item4{
+    input[type="email"]{
+        background-color: #fff;
+        width: 90%;
+        height: 50px;
+    }
+    input[type="email"]::placeholder{
+        color:$colorBlack; 
+        @include  textStyle($footerFont,$sizeHeader, 400, 16px);
+        text-align: center;
+    }
+    input[type="submit"]{
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}
 }
 
 
