@@ -580,7 +580,7 @@ a {
           transform: scale(1.1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .header-wrapper {
     min-width: 300px;
     width: 100%;
