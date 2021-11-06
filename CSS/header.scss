@@ -53,6 +53,11 @@ margin-top: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
+.header-btn2{
+    a{
+        text-align: right;
+    }
+}
 .header-btn{
     padding: 40px 50px;
     transition: all .4s;

@@ -76,6 +76,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .gallery-item6{
+        display: none;
+    }
     .gallery-image{
         background-color: #F3F4F6;
     }

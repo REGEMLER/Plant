@@ -55,6 +55,9 @@
     padding: 0;
     margin-right: 0;
     border: none;
+    .about-header2{
+        margin-left: 20px;
+    }
     .about-header{
         display: flex;
         justify-content:space-around;
@@ -73,9 +76,39 @@
     margin: 0 auto;
 }
 .gallery-images{
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr,2);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
     .gallery-item{
-        margin-bottom: 20px;
+        margin: 20px;
+    }
+    .gallery-item1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .gallery-item2{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .gallery-item3{
+        grid-row: 1;
+        grid-column: 3;
+    }
+    .gallery-item4{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .gallery-item5{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .gallery-item6{
+        display: block;
+        grid-row: 2;
+        grid-column: 3;
     }
 }
 // -------Section Plants-----------
@@ -91,6 +124,7 @@
         background-image: url(../IMG/plant1.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         h2{  
             width: 90%;
             margin: 0 auto;
@@ -110,7 +144,10 @@
         display: none;
     }
 }
-// -------Section Plants-----------
+// -------Section Forms-----------
+.forms{
+    margin-top: 10px;
+}
 .forms-content{
     display: block;
     width: 100%;
@@ -118,6 +155,8 @@
     text-align: center;
     background-image: url(../IMG/forms.png);
     background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
     h2{
         @include  textStyle($mainFont,$sizeH2, 700, 56px);
         color:$sizeMain;   
@@ -142,7 +181,7 @@
 }
 // -------Footer-----------
 .footer{
-    margin-top: 50px;
+    margin-top: 10px;
     background-color: #F3F4F6;
 }
 .footer-wrapper{
