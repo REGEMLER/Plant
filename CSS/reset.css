@@ -21,4 +21,8 @@ ul, ol, li {
 a {
   text-decoration: none;
 }
+
+header, main, footer {
+  overflow-x: hidden;
+}
 /*# sourceMappingURL=reset.css.map */
